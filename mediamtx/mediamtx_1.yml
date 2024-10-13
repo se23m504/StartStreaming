@@ -125,7 +125,6 @@ webrtcServerKey: server.key
 webrtcServerCert: server.crt
 webrtcAllowOrigin: '*'
 webrtcTrustedProxies: []
-#webrtcLocalUDPAddress: 192.168.137.1:8289
 webrtcLocalUDPAddress: :8101
 webrtcLocalTCPAddress: ''
 webrtcIPsFromInterfaces: yes
