@@ -1,0 +1,23 @@
+name: streaming
+
+services:
+  mediamtx-1: &default
+    container_name: mediamtx-1
+    environment:
+      - MTX_PROTOCOLS=tcp
+      - MTX_WEBRTCADDITIONALHOSTS=192.168.137.1
+    image: bluenviron/mediamtx
+    ports:
+      - 8200:8200
+      - 8201:8201/udp
+    volumes:
+      - ./mediamtx_2.yml:/mediamtx.yml
+
+  mediamtx-2:
+    <<: *default
+    container_name: mediamtx-2
+    ports:
+      - 8100:8100
+      - 8101:8101/udp
+    volumes:
+      - ./mediamtx_1.yml:/mediamtx.yml
