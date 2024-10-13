@@ -11,7 +11,7 @@ services:
       - 8200:8200
       - 8201:8201/udp
     volumes:
-      - ./mediamtx_2.yml:/mediamtx.yml
+      - ./mediamtx/mediamtx_2.yml:/mediamtx.yml
 
   mediamtx-2:
     <<: *default
@@ -20,4 +20,4 @@ services:
       - 8100:8100
       - 8101:8101/udp
     volumes:
-      - ./mediamtx_1.yml:/mediamtx.yml
+      - ./mediamtx/mediamtx_1.yml:/mediamtx.yml
