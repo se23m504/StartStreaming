@@ -14,6 +14,13 @@ if errorlevel 1 (
     goto waitForDocker
 )
 
+:waitForDaemon
+docker info >nul 2>&1
+if errorlevel 1 (
+    timeout /t 1 >nul
+    goto waitForDaemon
+)
+
 echo Starting docker compose
 cd ".\mediamtx"
 docker compose up -d
