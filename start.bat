@@ -29,4 +29,4 @@ start /MIN "OBS1" /D "C:\Program Files\obs-studio\bin\64bit" "obs64.exe" --profi
 timeout /t 1 >nul
 start /MIN "OBS2" /D "C:\Program Files\obs-studio\bin\64bit" "obs64.exe" --profile "Profile2" --collection "Profile2" --multi --startstreaming
 
-@REM pause
+pause
