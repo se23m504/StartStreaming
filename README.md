@@ -17,3 +17,10 @@
 ## IP address configuration
 
 The `docker-compose.yaml` is hardcoded to use the IP address `192.168.137.1`. You must update this to your specific network IP from the mobile hotspot configuration.
+
+## Build
+
+```
+docker build -t se23m504/startstreaming .\src -f .\docker\Dockerfile
+docker run --rm -v ${PWD}:/app/data se23m504/startstreaming
+```

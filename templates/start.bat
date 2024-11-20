@@ -24,9 +24,6 @@ echo Starting docker compose
 cd ".\mediamtx"
 docker compose up -d
 
-echo Launching OBS instances
-start /MIN "OBS1" /D "C:\Program Files\obs-studio\bin\64bit" "obs64.exe" --profile "Profile1" --collection "Profile1" --multi --startstreaming
-timeout /t 1 >nul
-start /MIN "OBS2" /D "C:\Program Files\obs-studio\bin\64bit" "obs64.exe" --profile "Profile2" --collection "Profile2" --multi --startstreaming
+{{OBS_INSTANCES}}
 
 pause
