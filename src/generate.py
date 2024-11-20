@@ -1,14 +1,16 @@
+from dotenv import dotenv_values
+
 from config import (
     count_servers,
     generate_docker_compose,
     generate_mediamtx_files,
     generate_start_bat,
-    load_env,
 )
 
 
 def main():
-    env_vars = load_env(".env")
+    env_vars = dotenv_values(".env")
+
     num_servers = count_servers(env_vars)
 
     generate_docker_compose(env_vars, num_servers)
