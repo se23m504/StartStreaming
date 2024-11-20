@@ -4,7 +4,6 @@ services:
   mediamtx-1: &default
     container_name: mediamtx-1
     environment:
-      - MTX_PROTOCOLS=tcp
       - MTX_WEBRTCADDITIONALHOSTS=192.168.137.1
     image: bluenviron/mediamtx
     ports:

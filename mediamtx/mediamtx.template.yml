@@ -1,5 +1,5 @@
-webrtcAddress: :8200
-webrtcLocalUDPAddress: :8201
+webrtcAddress: :{{WEBRTC_PORT}}
+webrtcLocalUDPAddress: :{{WEBRTC_LISTENER_PORT}}
 webrtcLocalTCPAddress: ''
 
 webrtcEncryption: no
