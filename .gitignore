@@ -1,6 +1,5 @@
-creation
-# mediamtx_*.yml
-# ./start.bat
+mediamtx/
+start.bat
 docker-compose.yml
 
 # Byte-compiled / optimized / DLL files
