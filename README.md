@@ -23,7 +23,8 @@
 
 3. Set up the necessary OBS profiles and scene collections:
 
-    - Let `N` be the number of instances you want to create (i.e., the maximum number of `PORT_X` defined in the `.env` file).
+    Let `N` be the number of instances you want to create (i.e., the maximum number of `PORT_X` defined in the `.env` file).
+
     - Create a scene collection and a profile for each instance (e.g., `Profile1`, `Profile2`, ... `ProfileN`).
     - Add scenes and configure the input sources (e.g., HDMI cards) for each scene collection.
     - Go to `Settings` -> `Stream`, set the `Service` to WHIP, and enter the endpoint for each MediaMTX server: `http://{{IP}}:{{PORT_X}}/mystream/whip`.
