@@ -41,6 +41,12 @@ The Docker image will automatically generate the necessary configurations for yo
 docker run --rm -v ${PWD}:/app/data se23m504/startstreaming
 ```
 
+Then, run the powershell auto-generated script:
+
+```
+./start.bat
+```
+
 ## Build
 
 The image is already available on DockerHub, but if you need to build it again for any reason, run the following command from the root directory:

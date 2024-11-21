@@ -24,6 +24,8 @@ echo Starting docker compose
 cd ".\mediamtx"
 docker compose up -d
 
+timeout /t 3 >nul
+
 {{OBS_INSTANCES}}
 
 pause
