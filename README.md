@@ -18,8 +18,8 @@
     In the `.env` file:
 
     - `IP` is the IP address to which the WebRTC server will be bound.
-    - `PORT_1` is the WebRTC HTTP listener port, which can be used for WHIP and WHEP.
-    - `LISTENER_PORT_1` is the WebRTC ICE/UDP port.
+    - `PORT_X` is the WebRTC HTTP listener port, which can be used for WHIP and WHEP.
+    - `LISTENER_PORT_X` is the WebRTC ICE/UDP port.
 
 3. Set up the necessary OBS profiles and scene collections:
 
