@@ -46,5 +46,5 @@ docker run --rm -v ${PWD}:/app/data se23m504/startstreaming
 The image is already available on DockerHub, but if you need to build it again for any reason, run the following command from the root directory:
 
 ```
-docker build -t se23m504/startstreaming .\src -f .\docker\Dockerfile
+docker build -t se23m504/startstreaming ./src -f ./docker/Dockerfile
 ```
