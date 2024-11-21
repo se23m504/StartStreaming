@@ -38,7 +38,7 @@
 The Docker image will automatically generate the necessary configurations for you. After finishing with the prerequisites, simply run the following command from the root repository:
 
 ```
-docker run --rm -v ${PWD}:/app/data se23m504/startstreaming
+docker run --rm -v ${PWD}:/app/data se23m504/configure
 ```
 
 Then, run the powershell auto-generated script:
@@ -49,8 +49,8 @@ Then, run the powershell auto-generated script:
 
 ## Build
 
-The image is already available on DockerHub, but if you need to build it again for any reason, run the following command from the root directory:
+The image is already available on [DockerHub](https://hub.docker.com/r/se23m504/configure), but if you need to build it again for any reason, run the following command from the root directory:
 
 ```
-docker build -t se23m504/startstreaming ./src -f ./docker/Dockerfile
+docker build -t se23m504/configure ./src -f ./docker/Dockerfile
 ```
